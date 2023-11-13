@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   web:
-    image: cowrvalera/docker-ubuntu-apache-php:22.04_php8.2_ioncube_1.0.0
+    image: cowrvalera/docker-ubuntu-apache-php:22.04-php8.2-ioncube-1.0.0
     restart: unless-stopped
     platform: linux/amd64
     volumes:
