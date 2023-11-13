@@ -38,7 +38,7 @@ Modules:
 
 
 ```sh
-    $ docker run -it --rm -v "./src/:/var/www/html" -p "127.0.0.1:80:80" --platform linux/amd64 cowrvalera/docker-ubuntu-apache-php:22.04-php8.2-ioncube-1.0.0
+    $ docker run -it --rm -v "./src/:/var/www/html" -p "127.0.0.1:80:80" --platform linux/amd64 cowrvalera/docker-ubuntu-apache-php:v1.0.0
 ```
 
 
@@ -49,7 +49,7 @@ version: '3.1'
 
 services:
   web:
-    image: cowrvalera/docker-ubuntu-apache-php:22.04-php8.2-ioncube-1.0.0
+    image: cowrvalera/docker-ubuntu-apache-php:v1.0.0
     restart: unless-stopped
     platform: linux/amd64
     volumes:

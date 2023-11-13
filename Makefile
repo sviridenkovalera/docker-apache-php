@@ -1,5 +1,5 @@
 build:
-	docker build -t cowrvalera/docker-ubuntu-apache-php:22.04-php8.2-ioncube-1.0.0 --platform linux/amd64 .
+	docker build -t cowrvalera/docker-ubuntu-apache-php:v1.0.0 --platform linux/amd64 .
 
 
 run_dev:
