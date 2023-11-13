@@ -1,5 +1,5 @@
 build:
-	docker build -t cowrvalera/docker-ubuntu-apache-php:v1.0.0 --platform linux/amd64 .
+	docker build -t cowrvalera/docker-apache-php:v1.0.0 --platform linux/amd64 .
 
 
 run_dev:
