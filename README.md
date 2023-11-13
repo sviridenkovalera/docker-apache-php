@@ -1,8 +1,11 @@
 # Ubuntu(22.04) + Apache + PHP 8.2 + Ioncube x86-64
 
 Webroot: /var/www/html
+
 User/Group: www-data:www-data(33:33)
+
 Port: 80
+
 Modules:
    - bcmath
    - curl
