@@ -77,6 +77,13 @@ RUN ln -sf /proc/self/fd/1 /var/log/apache2/access.log \
     && ln -sf /proc/self/fd/2 /var/log/apache2/error.log
 
 ADD entrypoint.sh /
+
+
+RUN a2enmod headers
+
+
 CMD ["bash", "/entrypoint.sh"]
+
+
 WORKDIR "/var/www/html"
 EXPOSE 80
