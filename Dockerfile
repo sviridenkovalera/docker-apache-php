@@ -82,6 +82,11 @@ ADD entrypoint.sh /
 RUN a2enmod headers
 
 
+RUN echo -e "ServerTokens Prod\nServerSignature Off" > /etc/apache2/conf-available/security.conf && \
+    a2enconf security
+
+
+
 CMD ["bash", "/entrypoint.sh"]
 
 
